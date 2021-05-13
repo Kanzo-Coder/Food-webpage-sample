@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(https://s1.1zoom.me/b5353/731/Coffee_Cappuccino_Cup_561287_1366x768.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+    margin-right: 8px;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 5px 30px;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;  
+    background-position: right;
+    transition: 1.5s; 
+}
+.nav ul li::after {
+    content: '';
+    width: 0px;
+    height: 4px;
+    background:#22B205;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.nav ul li:hover::after {
+    width: 70px;
+    background-position: left;
+}
+.btn {
+    top: 5%;
+    padding: 10px 20px;
+    border: 0;
+    background: #22B205;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    background-position: left;
+    transition: 1.5s;
+}
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+.btn:hover {
+    background-position: right;
+    color: white;
+}
+.nav ul li.active a {
+    background: #22B205;
+}
+.banner-title {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+.banner-title h1 {
+    font-size: 44px;
+    margin-bottom: 30px;
+    background-position: left;
+    transition: 1.5s;
+}
+.banner-title h1:hover::after{
+    background-position: right;
+}
+h2{
+    color: white;
+    font-size: 30px;
+    padding: 5px 20px;
+}
+.logo h2 {
+    float: left;
+    display: flex;
+    width: 500px;
+    height: 9px;
+}
+.footer {
+    clear: both;
+    padding: 10px;
+    text-align: right;
+    color: white;
+    top: 94%;
+    position: absolute;
+    left: 80%;
+}
